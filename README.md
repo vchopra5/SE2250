@@ -1,2 +1,2 @@
-# vchopra5_Assignment1
-Assignment 1 for SE2250
+# SE2250
+Assignments for SE2250
