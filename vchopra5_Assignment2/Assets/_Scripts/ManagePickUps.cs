@@ -35,9 +35,12 @@ public class ManagePickUps : MonoBehaviour
             float angle = i * Mathf.PI * 2 / numberOfObjects;
             Vector3 pos = new Vector3(Mathf.Cos(angle), 0.15f, Mathf.Sin(angle)) * radius;
             GameObject g = Instantiate(prefab, pos, rotation) as GameObject;
-            Debug.Log(g);
+
             Rigidbody rb = g.AddComponent<Rigidbody>();
             rb.useGravity = false;
+
+            Collider c = g.GetComponent<Collider>();
+            c.isTrigger = true;
 
             PickUp p = g.AddComponent<PickUp>();
 

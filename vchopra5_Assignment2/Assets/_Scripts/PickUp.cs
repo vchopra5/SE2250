@@ -16,10 +16,9 @@ public class PickUp : MonoBehaviour
         transform.Rotate(0, 0.5f, 0, Space.Self);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collider)
     {
-        Debug.Log(collision.collider.name);
-        if (collision.collider.name == "Player")
+        if (collider.name == "Player")
         {
             Points.updatePlayerScore(Score);
             Destroy(gameObject);
