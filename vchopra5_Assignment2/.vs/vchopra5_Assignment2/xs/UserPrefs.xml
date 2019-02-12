@@ -3,8 +3,8 @@
     <Files>
       <File FileName="Assets/_Scripts/ControlSphere.cs" Line="18" Column="9" />
       <File FileName="Assets/_Scripts/MoveCamera.cs" Line="18" Column="6" />
-      <File FileName="Assets/_Scripts/ManagePickUps.cs" Line="41" Column="1" />
-      <File FileName="Assets/_Scripts/PickUp.cs" Line="19" Column="34" />
+      <File FileName="Assets/_Scripts/ManagePickUps.cs" Line="43" Column="32" />
+      <File FileName="Assets/_Scripts/PickUp.cs" Line="20" Column="6" />
       <File FileName="Assets/_Scripts/Points.cs" Line="19" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
