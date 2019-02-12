@@ -31,7 +31,6 @@ public class ManagePickUps : MonoBehaviour
         Quaternion rotation = new Quaternion(50, 50, 50, 1);
         for (int i = 0; i < numberOfObjects; i++)
         {
-            int random = Random.Range(0, 3);
             float angle = i * Mathf.PI * 2 / numberOfObjects;
             Vector3 pos = new Vector3(Mathf.Cos(angle), 0.15f, Mathf.Sin(angle)) * radius;
             GameObject g = Instantiate(prefab, pos, rotation) as GameObject;
@@ -43,23 +42,25 @@ public class ManagePickUps : MonoBehaviour
             c.isTrigger = true;
 
             PickUp p = g.AddComponent<PickUp>();
-
-            p.Score = pointValues[random];
-
             Renderer r = g.GetComponent<Renderer>();
 
-            if (random == 0)
+            if (i % 3 == 0)
             {
                 r.material.color = Color.red;
+                p.Score = pointValues[0];
             }
-            else if (random == 1)
+            else if (i % 2 == 0)
             {
                 r.material.color = Color.blue;
+                p.Score = pointValues[1];
             }
             else
             {
                 r.material.color = Color.green;
+                p.Score = pointValues[2];
             }
+
+
         }
     }
 }
