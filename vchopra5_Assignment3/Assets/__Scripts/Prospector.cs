@@ -292,7 +292,6 @@ public class Prospector : MonoBehaviour {
             MoveToDiscard(target); // Moves the target to the discardPile
             MoveToTarget(Draw());  // Moves the next drawn card to the target
             UpdateDrawPile();     // Restacks the drawPile
-            ScoreManager.EVENT(eScoreEvent.draw);
             print("Current target: " + target.suit + target.rank);
             break;
 		case eCardState.target:
