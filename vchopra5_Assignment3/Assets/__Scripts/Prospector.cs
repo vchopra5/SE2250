@@ -293,7 +293,6 @@ public class Prospector : MonoBehaviour {
             MoveToTarget(Draw());  // Moves the next drawn card to the target
             UpdateDrawPile();     // Restacks the drawPile
             ScoreManager.EVENT(eScoreEvent.draw);
-            FloatingScoreHandler(eScoreEvent.draw);
             print("Current target: " + target.suit + target.rank);
             break;
 		case eCardState.target:
