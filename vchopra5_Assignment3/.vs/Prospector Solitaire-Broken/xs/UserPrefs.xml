@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{7D50E0D9-A95A-2FB9-4D87-EBC3BE3FF7FD}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/__Scripts/ShareOnTwitter.cs">
+    <Files>
+      <File FileName="Assets/__Scripts/CardProspector.cs" Line="28" Column="26" />
+      <File FileName="Assets/__Scripts/Prospector.cs" Line="326" Column="20" />
+      <File FileName="Assets/__Scripts/Card.cs" Line="96" Column="1" />
+      <File FileName="Assets/__Scripts/ScoreManager.cs" Line="58" Column="4" />
+      <File FileName="Assets/__Scripts/Deck.cs" Line="160" Column="24" />
+      <File FileName="Assets/__Scripts/ShareOnTwitter.cs" Line="15" Column="5" />
+      <File FileName="Assets/__Scripts/Scoreboard.cs" Line="66" Column="3" />
+      <File FileName="Assets/__Scripts/Layout.cs" Line="21" Column="55" />
+      <File FileName="Assets/__Scripts/FloatingScore.cs" Line="36" Column="5" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
