@@ -258,7 +258,8 @@ public class Prospector : MonoBehaviour {
 		// Set the depth sorting
 		cd.SetSortingLayerName(layout.discardPile.layerName);
 		cd.SetSortOrder(0);
-	}
+        cd.printCard();
+    }
 
 	// Arranges all the cards of the drawPile to show how many are left
 	void UpdateDrawPile() {
@@ -292,7 +293,7 @@ public class Prospector : MonoBehaviour {
             MoveToDiscard(target); // Moves the target to the discardPile
             MoveToTarget(Draw());  // Moves the next drawn card to the target
             UpdateDrawPile();     // Restacks the drawPile
-            print("Current target: " + target.suit + target.rank);
+            
             break;
 		case eCardState.target:
 			break;
@@ -319,8 +320,6 @@ public class Prospector : MonoBehaviour {
 			SetTableauFaces(); // Update tableau card face-ups
             ScoreManager.EVENT(eScoreEvent.mine);
             FloatingScoreHandler(eScoreEvent.mine);
-			
-            print("Current target: " + target.suit + target.rank);
             break; 
 		}
 		// Check to see whether the game is over or not

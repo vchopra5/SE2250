@@ -31,7 +31,12 @@ public class Card : MonoBehaviour {
 		}
 	}
 
-	void Start() {
+    public void printCard() {
+        print(this.suit + this.rank);
+    }
+
+
+    void Start() {
 		SetSortOrder(0);  // Ensures that the card starts properly depth sorted
 	}
 	// If spriteRenderers is not yet defined, this function defines it
